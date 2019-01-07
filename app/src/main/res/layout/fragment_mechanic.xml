@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MechanicFragment"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/colorPrimaryDark">
+
+        <!-- TODO: Update blank fragment layout -->
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/mechanicMap"
+            android:layout_width="match_parent"
+            android:layout_height="420dp"/>
+        <android.support.design.button.MaterialButton
+            android:id="@+id/btnRequestMechanic"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+            android:backgroundTint="#00DE61"
+            android:layout_gravity="bottom|center"
+            android:text="REQUEST MECHANIC"
+            android:fontFamily="@font/karla_bold"
+            android:textSize="16sp"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/mechancicRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="horizontal"></android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+
+
+
+
+</ScrollView>

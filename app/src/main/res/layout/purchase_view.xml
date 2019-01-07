@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:gravity="center">
+    <android.support.v7.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:elevation="16dp"
+        app:cardCornerRadius="8dp"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/ivPurchase"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:src="@drawable/notepad"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="10dp">
+                <TextView
+                    android:id="@+id/PurchaseName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:text="Product Name"
+                    android:fontFamily="@font/ubuntu_bold"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/PurchaseAmount"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:text="Amount"
+                    android:fontFamily="@font/karla_bold"
+                    android:textSize="16sp"
+                    android:drawableStart="@drawable/ic_cash"/>
+
+                <TextView
+                    android:id="@+id/PurchaseStatus"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:text="Status"
+                    android:fontFamily="@font/karla_bold"
+                    android:textSize="16sp"
+                    android:drawableStart="@drawable/ic_status"/>
+
+                <TextView
+                    android:id="@+id/PurchaseDate"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:text="Date"
+                    android:fontFamily="@font/karla_bold"
+                    android:textSize="16sp"
+                    android:drawableStart="@drawable/ic_today_black_24dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+</android.support.v7.widget.CardView>
+
+</LinearLayout>

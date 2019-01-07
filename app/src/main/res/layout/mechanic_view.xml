@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardUseCompatPadding="true"
+        app:cardBackgroundColor="#10171F"
+        android:elevation="16dp"
+        app:cardCornerRadius="8dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="start"
+            android:gravity="center">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/ivMechanic"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:civ_border_width="2dp"
+                app:civ_border_color="@color/colorPrimaryDark"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_rating"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:gravity="start">
+
+                <TextView
+                    android:id="@+id/tvMechanicName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/ubuntu_bold"
+                    android:textSize="16sp"
+                    tools:text="JOHN OMONDI"
+                    android:textColor="#F2F2F0"/>
+
+                <TextView
+                    android:id="@+id/tvMechanicRating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="4.5"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/ubuntu_bold"
+                    android:drawableStart="@drawable/ic_rate"
+                    android:textColor="#F2F2F0"
+                    />
+
+                <TextView
+                    android:id="@+id/tvMechanicArea"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="Kiambu"
+                    android:fontFamily="@font/ubuntu_bold"
+                    android:drawableStart="@drawable/ic_place_black_24dp"
+                    android:textColor="#F2F2F0"
+                    />
+
+                <TextView
+                    android:id="@+id/tvSpeciality"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="Deals in Mercedes"
+                    android:fontFamily="@font/ubuntu_bold"
+                    android:drawableStart="@drawable/ic_manfacturer"
+                    android:textColor="#F2F2F0"
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="bottom|center"
+            android:gravity="center">
+            <android.support.design.button.MaterialButton
+                android:id="@+id/btnText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+                android:text="TEXT"
+                android:fontFamily="@font/ubuntu_bold"
+                android:textStyle="bold"
+                android:backgroundTint="#009CFC"
+                app:icon="@drawable/ic_textsms_black_24dp"/>
+
+            <android.support.design.button.MaterialButton
+                android:id="@+id/btnCall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+                android:text="CALL"
+                android:fontFamily="@font/ubuntu_bold"
+                android:textStyle="bold"
+                android:backgroundTint="#2ED8B1"
+                app:icon="@drawable/ic_phone"
+                android:layout_marginLeft="10dp"/>
+            <android.support.design.button.MaterialButton
+                android:id="@+id/btnMail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+                android:text="MAIL"
+                android:fontFamily="@font/ubuntu_bold"
+                android:textStyle="bold"
+                android:backgroundTint="#FFE164"
+                app:icon="@drawable/ic_mail_person"
+                android:layout_marginLeft="10dp"/>
+
+        </LinearLayout>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

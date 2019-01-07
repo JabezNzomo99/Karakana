@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutActivity"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.Design.AppBarLayout">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/about_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v7.widget.CardView
+        android:layout_marginTop="10dp"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="#23252F"
+        app:cardUseCompatPadding="true"
+        android:layout_gravity="center"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="8dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            >
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_mechanic_large"
+                />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="KARAKANA"
+                android:textAlignment="center"
+                android:textColor="@color/app_bkg"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/ubuntu_bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Version 1.0.0."
+                android:drawableStart="@drawable/ic_info_black_24dp"
+                android:textAlignment="center"
+                android:textColor="#FFC304"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/ubuntu_bold"/>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Karakana is a mobile-based application that allows you to request SOS, Mechanic and also buy legitimate spares."
+                android:textAlignment="center"
+                android:textColor="#2ED8B1"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/ubuntu_bold"/>
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2018 Android Maestro"
+                android:drawableStart="@drawable/ic_copyright_black_24dp"
+                android:textAlignment="center"
+                android:textColor="#FFC304"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/ubuntu_bold"/>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
